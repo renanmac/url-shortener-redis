@@ -1,0 +1,50 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    concurrent-ruby (1.1.9)
+    faker (2.19.0)
+      i18n (>= 1.6, < 2)
+    hiredis (0.6.3)
+    i18n (1.8.10)
+      concurrent-ruby (~> 1.0)
+    multi_json (1.15.0)
+    mustermann (1.1.1)
+      ruby2_keywords (~> 0.0.1)
+    nest (3.2.0)
+      redic
+    ohm (3.1.1)
+      nest (~> 3)
+      redic (~> 1.5.0)
+      stal
+    rack (2.2.3)
+    rack-protection (2.1.0)
+      rack
+    redic (1.5.3)
+      hiredis
+    ruby2_keywords (0.0.5)
+    sinatra (2.1.0)
+      mustermann (~> 1.0)
+      rack (~> 2.2)
+      rack-protection (= 2.1.0)
+      tilt (~> 2.0)
+    sinatra-contrib (2.1.0)
+      multi_json
+      mustermann (~> 1.0)
+      rack-protection (= 2.1.0)
+      sinatra (= 2.1.0)
+      tilt (~> 2.0)
+    stal (0.3.0)
+      redic (~> 1.5)
+    tilt (2.0.10)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  faker
+  ohm
+  sinatra
+  sinatra-contrib
+
+BUNDLED WITH
+   2.1.2

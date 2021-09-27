@@ -1,0 +1,18 @@
+version: '3.5'
+
+services:
+  web:
+    build: .
+    command: ruby server.rb -s Puma
+    ports:
+      - 4567:4567
+    depends_on: 
+      - redis
+  redis:
+    image: redis:3.2
+    command: bash -c "redis-server --appendonly yes"
+    ports:
+      - '6379:6379'
+    container_name: 'url-shortner-redis'
+    volumes:
+      - ./redis-volume:/data
